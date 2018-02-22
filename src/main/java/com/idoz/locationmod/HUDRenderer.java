@@ -18,30 +18,26 @@ public class HUDRenderer {
     /**
      * Event fired at various points during the GUI rendering process.
      * We render anything that need to be rendered onto the HUD in this method.
+     *
      * @param event
      */
     @SubscribeEvent
-    public void RenderGameOverlayEvent(RenderGameOverlayEvent event)
-    {
+    public void RenderGameOverlayEvent(RenderGameOverlayEvent event) {
         //render everything onto the screen
-        if(event.type == RenderGameOverlayEvent.ElementType.TEXT)
-        {
+        if (event.type == RenderGameOverlayEvent.ElementType.TEXT) {
             InfoLine.RenderOntoHUD();
 //            DistanceMeasurer.RenderOntoHUD();
 //            DurabilityInfo.RenderOntoHUD();
 //            PotionTimers.RenderOntoHUD();
 //            HUDEntityTrackerHelper.RenderEntityInfo(event.partialTicks);	//calls other mods that need to render things on the HUD near entities
 //            ItemSelector.RenderOntoHUD(event.partialTicks);
-        }
-        else if(event.type == RenderGameOverlayEvent.ElementType.DEBUG)
-        {
+        } else if (event.type == RenderGameOverlayEvent.ElementType.DEBUG) {
 //            AnimalInfo.RenderOntoDebugMenu();
         }
 
 
         //change how the inventories are rendered (this has to be done on every game tick)
-        if (mc.currentScreen instanceof InventoryEffectRenderer)
-        {
+        if (mc.currentScreen instanceof InventoryEffectRenderer) {
 //            PotionTimers.DisableInventoryPotionEffects((InventoryEffectRenderer)mc.currentScreen);
         }
     }
