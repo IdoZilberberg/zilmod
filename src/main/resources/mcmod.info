@@ -1,0 +1,16 @@
+[
+{
+  "modid": "zilmod",
+  "name": "ZIL Mod",
+  "description": "Our ZIL Mod!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["IdoZ"],
+  "credits": "Everyone",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
